@@ -88,6 +88,7 @@ theme.set_highlights = function(opts)
     hl(0, 'SpellRare', { fg = c.vscRed, bg = c.vscBack, undercurl = true, sp = c.vscRed })
     hl(0, 'SpellLocal', { fg = c.vscRed, bg = c.vscBack, undercurl = true, sp = c.vscRed })
     hl(0, 'Whitespace', { fg = isDark and c.vscLineNumber or c.vscTabOther })
+    hl(0, 'MoreMsg', { fg = c.vscYellow, bg = 'NONE', bold = true, sp = c.vscYellow })
 
     -- Treesitter
     hl(0, 'TSError', { fg = c.vscRed, bg = 'NONE' })
@@ -359,8 +360,8 @@ theme.set_highlights = function(opts)
 
     -- coc.nvim
     hl(0, 'CocGitAddedSign', { fg = c.vscDiffGreenLight, bg = 'NONE' })
-    hl(0, 'CocGitChangeRemovedSign', { fg = '#AF00DB', bg = 'NONE' })
-    hl(0, 'CocGitChangedSign', { fg = c.vscDiffBlueDark, bg = 'NONE' })
+    hl(0, 'CocGitChangeRemovedSign', { fg = c.vscPink, bg = 'NONE' })
+    hl(0, 'CocGitChangedSign', { fg = c.vscDiffBlueLight, bg = 'NONE' })
     hl(0, 'CocGitRemovedSign', { fg = c.vscDiffRedLight, bg = 'NONE' })
     hl(0, 'CocGitTopRemovedSign', { fg = c.vscDiffRedLight, bg = 'NONE' })
 
