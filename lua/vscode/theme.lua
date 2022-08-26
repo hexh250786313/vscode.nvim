@@ -357,6 +357,13 @@ theme.set_highlights = function(opts)
     hl(0, 'texDocType', { fg = c.vscPink, bg = 'NONE' })
     hl(0, 'texDocTypeArgs', { fg = c.vscLightBlue, bg = 'NONE' })
 
+    -- coc.nvim
+    hl(0, 'CocGitAddedSign', { fg = c.vscDiffGreenLight, bg = 'NONE' })
+    hl(0, 'CocGitChangeRemovedSign', { fg = '#AF00DB', bg = 'NONE' })
+    hl(0, 'CocGitChangedSign', { fg = c.vscDiffBlueDark, bg = 'NONE' })
+    hl(0, 'CocGitRemovedSign', { fg = c.vscDiffRedLight, bg = 'NONE' })
+    hl(0, 'CocGitTopRemovedSign', { fg = c.vscDiffRedLight, bg = 'NONE' })
+
     -- Git
     hl(0, 'gitcommitHeader', { fg = c.vscGray, bg = 'NONE' })
     hl(0, 'gitcommitOnBranch', { fg = c.vscGray, bg = 'NONE' })
@@ -587,6 +594,11 @@ theme.set_highlights = function(opts)
 end
 
 theme.link_highlight = function()
+    -- coc.nvim
+    hl(0, 'CocErrorHighlight', { link = 'DiagnosticUnderlineError' })
+    hl(0, 'CocWarningHighlight', { link = 'DiagnosticUnderlineWarn' })
+    hl(0, 'CocInfoHighlight', { link = 'DiagnosticUnderlineInfo' })
+    hl(0, 'CocHintHighlight', { link = 'DiagnosticUnderlineHint' })
     -- Legacy groups for official git.vim and diff.vim syntax
     hl(0, 'diffAdded', { link = 'DiffAdd' })
     hl(0, 'diffChanged', { link = 'DiffChange' })
